@@ -166,30 +166,6 @@
       "default": "全球直连"
     },
     {
-      "tag": "国外媒体",
-      "type": "selector",
-      "outbounds": [
-        "全球直连",
-        "手动选择",
-        "自动选择",
-        "高级节点",
-        "日韩节点"
-      ],
-      "default": "高级节点"
-    },
-    {
-      "tag": "国内媒体",
-      "type": "selector",
-      "outbounds": [
-        "全球直连",
-        "手动选择",
-        "自动选择",
-        "高级节点",
-        "日韩节点"
-      ],
-      "default": "全球直连"
-    },
-    {
       "tag": "漏网之鱼",
       "type": "selector",
       "outbounds": [
@@ -351,14 +327,14 @@
           "geosite-google",
           "geosite-github"
         ],
-        "outbound": "国外媒体"
+        "outbound": "节点选择"
       },
       {
         "rule_set": [
           "geoip-cn",
           "geosite-cn"
         ],
-        "outbound": "国内媒体"
+        "outbound": "全球直连"
       }
     ],
     "rule_set": [
