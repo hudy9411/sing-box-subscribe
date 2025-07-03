@@ -142,18 +142,6 @@
       "default": "日韩节点"
     },
     {
-      "tag": "谷歌服务",
-      "type": "selector",
-      "outbounds": [
-        "全球直连",
-        "手动选择",
-        "自动选择",
-        "高级节点",
-        "日韩节点"
-      ],
-      "default": "高级节点"
-    },
-    {
       "tag": "苹果服务",
       "type": "selector",
       "outbounds": [
@@ -191,6 +179,18 @@
     },
     {
       "tag": "国内媒体",
+      "type": "selector",
+      "outbounds": [
+        "全球直连",
+        "手动选择",
+        "自动选择",
+        "高级节点",
+        "日韩节点"
+      ],
+      "default": "全球直连"
+    },
+    {
+      "tag": "漏网之鱼",
       "type": "selector",
       "outbounds": [
         "全球直连",
@@ -261,7 +261,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "节点选择",
+    "final": "漏网之鱼",
     "rules": [
       {
         "inbound": [
@@ -330,15 +330,6 @@
       },
       {
         "rule_set": [
-          "geosite-youtube",
-          "geoip-google",
-          "geosite-google",
-          "geosite-github"
-        ],
-        "outbound": "谷歌服务"
-      },
-      {
-        "rule_set": [
           "geosite-hbo",
           "geosite-primevideo",
           "geosite-geolocation-!cn",
@@ -354,7 +345,11 @@
           "geoip-twitter",
           "geosite-twitter",
           "geoip-telegram",
-          "geosite-telegram"
+          "geosite-telegram",
+          "geosite-youtube",
+          "geoip-google",
+          "geosite-google",
+          "geosite-github"
         ],
         "outbound": "国外媒体"
       },
