@@ -302,6 +302,13 @@
         "outbound": "节点选择"
       },
       {
+        "domain_suffix": [
+          "v6.rocks",
+          "duckdns.org"
+        ],
+        "outbound": "全球直连"
+      },
+      {
         "ip_is_private": true,
         "outbound": "全球直连"
       },
@@ -357,6 +364,16 @@
           "geosite-cn"
         ],
         "outbound": "国内媒体"
+      },
+      {
+        "type": "final",
+        "outbound": [
+          "全球直连",
+          "手动选择",
+          "自动选择",
+          "高级节点",
+          "日韩节点"
+        ]
       }
     ],
     "rule_set": [
