@@ -278,6 +278,10 @@
         "outbound": "节点选择"
       },
       {
+        "ip_is_private": true,
+        "outbound": "全球直连"
+      },
+      {
         "domain_suffix": [
           "v6.rocks",
           "duckdns.org"
@@ -285,12 +289,20 @@
         "outbound": "全球直连"
       },
       {
-        "ip_is_private": true,
-        "outbound": "全球直连"
-      },
-      {
         "rule_set": "geosite-openai",
         "outbound": "人工智能"
+      },
+      {
+        "rule_set": [
+          "geoip-apple",
+          "geosite-apple",
+          "geosite-amazon"
+        ],
+        "outbound": "苹果服务"
+      },
+      {
+        "rule_set": "geosite-microsoft",
+        "outbound": "微软服务"
       },
       {
         "rule_set": [
@@ -316,18 +328,6 @@
           "geosite-github"
         ],
         "outbound": "节点选择"
-      },
-      {
-        "rule_set": [
-          "geoip-apple",
-          "geosite-apple",
-          "geosite-amazon"
-        ],
-        "outbound": "苹果服务"
-      },
-      {
-        "rule_set": "geosite-microsoft",
-        "outbound": "微软服务"
       },
       {
         "rule_set": [
